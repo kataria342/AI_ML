@@ -9,13 +9,12 @@ def helloworld():
 helloworld()
 
 
-def addition(e=1, j=1): # Function with default parameter values
+def addition(e, f, g=1, h=2):  # Function with default parameter values
     b = int(input("Enter b: \n"))
-    result = a + b
+    result = a + b + e + f + g + h
     print("Result is : ", result)
-    result = a + b + e + j
-    print("Result is : ", result)
+    return result   # Return value
 
 
-addition()
-addition(2, 3) # Function with Parameters
+addition(2, 3)
+print("Return result", addition(2, 3, 4, 5))  # Function with Parameters
